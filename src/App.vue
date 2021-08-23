@@ -36,5 +36,12 @@ body {
   margin: 0 auto;
   background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(158,226,241,1) 100%);
+@include phone{
+  width: 95%;
+}
+
+@include tablet {
+  width: 95%;
+}
 }
 </style>

@@ -79,6 +79,15 @@ export default {
 
 <style lang="scss" scoped>
 .today-box {
+
+@include phone{
+  width: 100%;
+}
+
+@include tablet {
+  width: 100%;
+}
+
   width: 40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

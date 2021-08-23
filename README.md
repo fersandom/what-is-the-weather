@@ -24,5 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 TODOS
---Refactor to mobile first
 --Create a night mode

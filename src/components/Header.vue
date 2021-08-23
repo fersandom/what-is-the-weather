@@ -79,11 +79,14 @@ export default {
     outline: none;
     transition: 0.5s;
     margin-right: 15px;
+    
   }
   input:hover{
     width: 200px;
-    
     border-radius: 10px;
+    @include phone{
+      width: 100px;
+    }
   }
   button {
     display: none;
