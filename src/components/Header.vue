@@ -19,10 +19,14 @@
           v-model.trim="store.citySearch.value"
           type="text"
         />
-        <button v-on:click.prevent="store.methods.prepareSearch()" type="submit" >Search</button>
+        <button
+          v-on:click.prevent="store.methods.prepareSearch()"
+          type="submit"
+        >
+          Search
+        </button>
         <fa icon="search" />
       </form>
-      
     </div>
   </div>
 </template>
@@ -79,18 +83,19 @@ export default {
     outline: none;
     transition: 0.5s;
     margin-right: 15px;
-    
+    @include phone {
+      width: 30px;
+    }
   }
-  input:hover{
+  input:hover {
     width: 200px;
     border-radius: 10px;
-    @include phone{
+    @include phone {
       width: 100px;
     }
   }
   button {
     display: none;
   }
-
 }
 </style>

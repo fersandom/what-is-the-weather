@@ -26,19 +26,19 @@ const methods = {
 
         if (!prepareSearch && !state.lastSearch) {
             const response = await fetch(
-                `http://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=Barcelona&days=4&aqi=no&alerts=no`)
+                `https://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=Barcelona&days=4&aqi=no&alerts=no`)
             state.weatherData = await response.json()
             state.currentDayImage = await state.weatherData.current.condition.icon
             weatherDataReady.value = true;
         } else if (prepareSearch && !state.lastSearch) {
             const response = await fetch(
-                `http://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=${prepareSearch}&days=4&aqi=no&alerts=no`)
+                `https://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=${prepareSearch}&days=4&aqi=no&alerts=no`)
             state.weatherData = await response.json()
             state.currentDayImage = await state.weatherData.current.condition.icon
             weatherDataReady.value = true;
         } else {
             const response = await fetch(
-                `http://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=${state.lastSearch}&days=4&aqi=no&alerts=no`)
+                `https://api.weatherapi.com/v1/forecast.json?key=9863abeb6a1b48a393d72909211908&q=${state.lastSearch}&days=4&aqi=no&alerts=no`)
             state.weatherData = await response.json()
             state.currentDayImage = await state.weatherData.current.condition.icon
             weatherDataReady.value = true;
