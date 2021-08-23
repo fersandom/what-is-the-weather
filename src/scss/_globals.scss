@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+$main-font: 'Karla', sans-serif;
+$main-color: #343a40;
+$text-xl:24px;
+$text-l:18px;
+$text-m:14px;
+$text-s:10px;
+
+*{
+    font-family: $main-font;
+    padding: 0;
+    margin: 0;
+    color: $main-color;
+}
